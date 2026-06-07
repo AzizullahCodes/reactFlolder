@@ -8,7 +8,7 @@
 // }
 // export default PublicRoutes;
 
-import React, { use } from "react";
+import React from "react";
 import { Navigate, Outlet } from "react-router-dom";
 
 const PublicRoutes = () => {
