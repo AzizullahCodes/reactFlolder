@@ -5,7 +5,6 @@ const Home = ()=>{
     //logoutFun
     const logoutFunction = ()=>{
         localStorage.removeItem('user');
-        localStorage.setItem('isLoggedIn','false')
         navigate('/login')
     }
     return(

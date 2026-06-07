@@ -19,7 +19,7 @@ const Login = () => {
         password === getData.password
       ) {
         alert('login successful');
-        localStorage.setItem("isLoggedIn", "true");
+        // localStorage.setItem("isLoggedIn", "true") && localStorage.setItem("isAvailable", "false");
         navigate('/');
       } else {
         alert('wrong password and email');

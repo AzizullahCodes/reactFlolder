@@ -6,12 +6,17 @@ import Contact from "../../pages/contact/contact";
 import Login from "../../pages/login/login";
 import SignUp from "../../pages/signup/signup";
 import ProtectedRoutes from "../protectedRoutes/protectedRoutes";
+import PublicRoutes from "../publicRoutes/publicRoutes";
 const AppRoutes = ()=>{
     return(
         <Routes>
             {/* public routes */}
-            <Route path="/login" element={<Login/>}/>
+            <Route element={<PublicRoutes/>}>
+<Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<SignUp/>}/>
+            </Route>
+
+            
             {/* protected routes */}
             <Route element={<ProtectedRoutes/>}>
             <Route path="/" element={<Home/>}/>
